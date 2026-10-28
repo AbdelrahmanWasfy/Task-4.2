@@ -33,16 +33,3 @@ A student wants to compare second-hand campus items, find an affordable listing 
 
 Your redesign should support the scenario above without removing or weakening the existing features.
 
-## UI/UX Rescue Challenge (25–30 minutes)
-
-**Your mission:** use this interface as an end user, find **at least three distinct, meaningful UI/UX problems**, and fix all three with AI assistance.
-
-- Explain the user's goal and why each issue hurts usability.
-- Ask AI to suggest alternatives and compare trade-offs before you implement a solution.
-- Choose your own changes; there is no prescribed visual redesign.
-- Preserve all working behavior and relevant validation.
-- Demonstrate the main action, one unsuccessful action, and your three improvements.
-
-**Submit:** the modified React files, before/after screenshots, three brief justifications, and one example of an AI design suggestion you refined or rejected.
-
-**Evaluation:** We assess usability reasoning, design consistency, preserved functionality, and testing. Using AI is allowed and expected. Cosmetic changes alone are not sufficient.
