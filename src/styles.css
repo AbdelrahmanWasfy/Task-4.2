@@ -20,3 +20,45 @@
 .field-grid .readonly-input{background:#f6f4f8;color:#696278;cursor:default}
 .field-grid .email-helper{font-size:11px;color:#978fa2;font-weight:400;line-height:1.4}
 @media(max-width:600px){.detail-panel{padding:22px}.detail-meta{grid-template-columns:1fr}.detail-meta p{margin:6px 0}}
+
+/* Scenario support: price/availability filters and side-by-side comparison. */
+.sort .max-price{border:0;background:transparent;outline:none;width:80px;color:#544f68;font-size:12px}
+.available-toggle{cursor:pointer}
+.available-toggle span{color:#544f68}
+.compare-check{display:flex;align-items:center;gap:7px;font-size:11px;color:#665293;margin-bottom:9px;cursor:pointer}
+.compare-check:has(input:disabled){color:#aaa4b4;cursor:not-allowed}
+.compare-bar{position:sticky;bottom:16px;margin-top:22px;display:flex;align-items:center;gap:12px;background:#352859;color:#f3edfc;border-radius:14px;padding:12px 16px;font-size:12px;box-shadow:0 12px 30px #16112840;z-index:5}
+.compare-bar span{margin-right:auto}
+.compare-bar button:not(.sell-cta){border:1px solid #8b7bb3;background:transparent;color:#f3edfc;border-radius:9px;padding:9px 13px;font-size:12px}
+.compare-bar .sell-cta:disabled{opacity:.5;cursor:not-allowed}
+.compare-panel{background:#fff;border-radius:24px;padding:28px;position:relative;box-shadow:0 30px 100px #16112855;width:min(900px,100%);max-height:90vh;overflow:auto}
+.compare-panel h2{font:700 28px Outfit;margin:4px 0 18px}
+.compare-scroll{overflow-x:auto}
+.compare-table{border-collapse:collapse;width:100%;font-size:12px;color:#4c4560}
+.compare-table th,.compare-table td{padding:11px 10px;border-bottom:1px solid #ece9f1;text-align:left;vertical-align:top;min-width:150px}
+.compare-table tbody th{color:#8b8796;font-weight:600;min-width:90px}
+.compare-table thead th{font-size:14px;color:#29213b}
+.compare-table tr:last-child td{border-bottom:0}
+.compare-photo{height:110px;border-radius:12px;overflow:hidden;background:#f3f1f6;display:grid;place-items:center;margin-bottom:9px}
+.compare-photo .compare-img{width:100%;height:100%;object-fit:cover;display:block}
+.compare-photo .item-emoji{font-size:48px}
+.compare-table strong{color:#56428a;font-size:14px}
+.lowest{display:inline-block;margin-left:8px;background:#e6f4ee;color:#1a6b51;border-radius:100px;padding:3px 8px;font-size:10px;font-weight:700}
+@media(max-width:600px){.compare-panel{padding:22px}.compare-bar{flex-wrap:wrap}}
+
+/* Photo upload in the Sell / Edit form. */
+.photo-picker{display:flex;flex-direction:column;gap:8px;font-size:12px;font-weight:600;color:#5c546f;grid-column:span 2}
+.photo-label small{font-weight:400;color:#978fa2}
+.photo-thumbs{display:flex;gap:10px;flex-wrap:wrap}
+.photo-thumb,.add-photo{width:104px;height:80px;border-radius:12px;overflow:hidden;position:relative;flex-shrink:0}
+.photo-thumb{border:1px solid #dcd7e6;background:#f4f1fb;display:grid;place-items:center}
+.photo-thumb .thumb-img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-thumb .item-emoji{font-size:32px}
+.cover-tag{position:absolute;left:6px;bottom:6px;background:#ffffffe0;color:#56428a;border-radius:100px;padding:2px 7px;font-size:9px;font-weight:800}
+.remove-photo{position:absolute;top:5px;right:5px;width:22px;height:22px;border:0;border-radius:50%;background:#211b31b0;color:#fff;font-size:14px;line-height:1;display:grid;place-items:center;padding:0}
+.add-photo{border:1.5px dashed #b9abd9;background:#faf8fe;color:#7956c3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:11px;cursor:pointer}
+.add-photo span{font-size:20px;line-height:1}
+.add-photo input{position:absolute;width:1px;height:1px;opacity:0}
+.add-photo:focus-within{outline:2px solid #7956c3;outline-offset:2px}
+.photo-msg{font-weight:400;color:#a44b48;font-size:11px}
+@media(max-width:600px){.photo-picker{grid-column:span 1}}
